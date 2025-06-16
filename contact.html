@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="gallery.html">Galerija</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Kontaktni obrazec</h1>
+    <form onsubmit="return preveriObrazec()">
+      <label>Ime:
+        <input type="text" id="ime" required>
+      </label><br>
+      <label>Email:
+        <input type="email" id="email" required>
+      </label><br>
+      <label>Sporočilo:
+        <textarea id="sporocilo" required></textarea>
+      </label><br>
+      <button type="submit">Pošlji</button>
+    </form>
+    <p id="napaka" class="error"></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Moje ime</p>
+  </footer>
+</body>
+</html>
